@@ -1,0 +1,333 @@
+/* Live Hydrogen Benefits Section */
+.live-hydrogen-benefits {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.live-hydrogen-benefits-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.live-hydrogen-benefits-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.live-hydrogen-benefits-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.live-hydrogen-benefits-subtitle {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Carousel Wrapper */
+.live-hydrogen-benefits-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Navigation Buttons */
+.live-hydrogen-benefits-nav {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: #dbeafe;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.live-hydrogen-benefits-nav:hover:not(.disabled) {
+  background-color: #00BCEA;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.live-hydrogen-benefits-nav.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.live-hydrogen-benefits-nav-prev {
+  order: 1;
+}
+
+.live-hydrogen-benefits-nav-next {
+  order: 3;
+  background-color: #00BCEA;
+  color: #ffffff;
+}
+
+.live-hydrogen-benefits-nav-next:hover:not(.disabled) {
+  background-color: #00A8D4;
+}
+
+/* Carousel Container */
+.live-hydrogen-benefits-carousel {
+  order: 2;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.live-hydrogen-benefits-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 32px;
+}
+
+/* Benefit Card */
+.live-hydrogen-benefit-card {
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 0 calc(33.333% - 22px);
+  min-width: 0;
+  transition: all 0.3s ease;
+}
+
+.live-hydrogen-benefit-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 188, 234, 0.15);
+  transform: translateY(-4px);
+  border-color: #00BCEA;
+}
+
+/* Icon */
+.live-hydrogen-benefit-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00BCEA 0%, #87CEEB 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.live-hydrogen-benefit-icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+/* Title */
+.live-hydrogen-benefit-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+/* Description */
+.live-hydrogen-benefit-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Tablet Responsive (<= 1024px) */
+@media (max-width: 1024px) {
+  .live-hydrogen-benefits {
+    padding: 60px 0;
+  }
+
+  .live-hydrogen-benefits-container {
+    padding: 0 32px;
+  }
+
+  .live-hydrogen-benefits-header {
+    margin-bottom: 50px;
+  }
+
+  .live-hydrogen-benefits-title {
+    font-size: 36px;
+  }
+
+  .live-hydrogen-benefits-subtitle {
+    font-size: 36px;
+  }
+
+  .live-hydrogen-benefits-track {
+    gap: 24px;
+  }
+
+  .live-hydrogen-benefit-card {
+    flex: 0 0 calc(50% - 12px);
+    padding: 36px 28px;
+  }
+
+  .live-hydrogen-benefit-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+
+  .live-hydrogen-benefit-icon svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .live-hydrogen-benefit-title {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .live-hydrogen-benefit-description {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Responsive (<= 768px) */
+@media (max-width: 768px) {
+  .live-hydrogen-benefits {
+    padding: 50px 0;
+  }
+
+  .live-hydrogen-benefits-container {
+    padding: 0 24px;
+  }
+
+  .live-hydrogen-benefits-header {
+    margin-bottom: 40px;
+  }
+
+  .live-hydrogen-benefits-title {
+    font-size: 32px;
+  }
+
+  .live-hydrogen-benefits-subtitle {
+    font-size: 32px;
+  }
+
+  .live-hydrogen-benefits-carousel-wrapper {
+    gap: 12px;
+  }
+
+  .live-hydrogen-benefits-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .live-hydrogen-benefits-nav .w-6 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .live-hydrogen-benefits-track {
+    gap: 16px;
+  }
+
+  .live-hydrogen-benefit-card {
+    flex: 0 0 calc(100% - 8px);
+    padding: 40px 32px;
+  }
+
+  .live-hydrogen-benefit-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+  }
+
+  .live-hydrogen-benefit-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .live-hydrogen-benefit-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .live-hydrogen-benefit-description {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .live-hydrogen-benefits {
+    padding: 40px 0;
+  }
+
+  .live-hydrogen-benefits-container {
+    padding: 0 20px;
+  }
+
+  .live-hydrogen-benefits-header {
+    margin-bottom: 32px;
+  }
+
+  .live-hydrogen-benefits-title {
+    font-size: 28px;
+  }
+
+  .live-hydrogen-benefits-subtitle {
+    font-size: 28px;
+  }
+
+  .live-hydrogen-benefits-nav {
+    width: 36px;
+    height: 36px;
+  }
+
+  .live-hydrogen-benefits-nav .w-6 {
+    width: 18px;
+    height: 18px;
+  }
+
+  .live-hydrogen-benefit-card {
+    padding: 32px 24px;
+  }
+
+  .live-hydrogen-benefit-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+
+  .live-hydrogen-benefit-icon svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .live-hydrogen-benefit-title {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .live-hydrogen-benefit-description {
+    font-size: 15px;
+  }
+}
+

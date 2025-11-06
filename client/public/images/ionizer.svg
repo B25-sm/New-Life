@@ -1,0 +1,34 @@
+<svg width="348" height="348" viewBox="0 0 348 348" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Product Container -->
+  <rect x="74" y="54" width="200" height="240" rx="8" fill="#1f2937" stroke="#00bcea" stroke-width="3"/>
+  
+  <!-- Top Section -->
+  <rect x="84" y="64" width="180" height="40" rx="4" fill="#374151"/>
+  
+  <!-- Control Panel -->
+  <circle cx="174" cy="84" r="12" fill="#00bcea"/>
+  <rect x="120" y="100" width="108" height="8" rx="4" fill="#4b5563"/>
+  <rect x="120" y="112" width="88" height="8" rx="4" fill="#4b5563"/>
+  
+  <!-- Filter Section -->
+  <rect x="94" y="130" width="160" height="120" rx="6" fill="#111827" stroke="#00bcea" stroke-width="2"/>
+  <rect x="104" y="140" width="140" height="20" rx="2" fill="#374151"/>
+  <rect x="104" y="170" width="140" height="20" rx="2" fill="#374151"/>
+  <rect x="104" y="200" width="140" height="20" rx="2" fill="#374151"/>
+  <rect x="104" y="230" width="140" height="20" rx="2" fill="#374151"/>
+  
+  <!-- Water Flow Indicator -->
+  <circle cx="174" cy="270" r="8" fill="#00bcea" opacity="0.6"/>
+  <path d="M174 262 L174 278" stroke="#00bcea" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Base -->
+  <ellipse cx="174" cy="300" rx="90" ry="15" fill="#4b5563"/>
+  <ellipse cx="174" cy="298" rx="85" ry="12" fill="#6b7280"/>
+  
+  <!-- Brand Label -->
+  <text x="174" y="325" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#00bcea" text-anchor="middle">LIFE IONIZER</text>
+</svg>
+
+
+
+

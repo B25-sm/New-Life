@@ -1,0 +1,242 @@
+.machine-hero {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  background: linear-gradient(to right, #083f4f, #063a49);
+  overflow: hidden;
+}
+
+.machine-hero-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Background Gradient Animation - Slow Horizontal Shift */
+.machine-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    #083f4f 0%,
+    #063a49 50%,
+    #083f4f 100%
+  );
+  background-size: 200% 100%;
+  animation: gradient-shift 20s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Machine Diagram Styles */
+.machine-diagram {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  max-width: 40%;
+  height: auto;
+}
+
+.machine-path {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: draw-machine 3s ease-in-out forwards;
+}
+
+@keyframes draw-machine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Machine Icons - Pulse and Float */
+.machine-icon {
+  position: absolute;
+  z-index: 10;
+}
+
+.heart-icon {
+  top: 15%;
+  left: 30%;
+  animation: pulse-float 4s ease-in-out infinite;
+}
+
+.target-icon-1 {
+  top: 12%;
+  left: 45%;
+  animation: pulse-float 4.5s ease-in-out infinite;
+}
+
+.target-icon-2 {
+  top: 50%;
+  left: 45%;
+  animation: pulse-float 4.8s ease-in-out infinite;
+}
+
+.hexagon-cluster {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 10;
+  animation: pulse-float 5s ease-in-out infinite;
+}
+
+.lightning-cluster {
+  top: 40%;
+  left: 42%;
+  animation: pulse-float 4.3s ease-in-out infinite;
+}
+
+.liver-icon-container {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  z-index: 10;
+  animation: pulse-float 5.2s ease-in-out infinite;
+}
+
+.semicircular-arc {
+  top: 65%;
+  left: 15%;
+  animation: rotate-arc 14s linear infinite;
+  transform-origin: center;
+}
+
+/* Pulse and Float Animation */
+@keyframes pulse-float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    transform: translateY(-6px) scale(1.03);
+  }
+  50% {
+    transform: translateY(0) scale(1.06);
+  }
+  75% {
+    transform: translateY(6px) scale(1.03);
+  }
+}
+
+/* Rotate Arc Animation */
+@keyframes rotate-arc {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Connecting Lines */
+.connecting-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .machine-hero {
+    min-height: 500px;
+  }
+  
+  .machine-diagram {
+    max-width: 50%;
+  }
+  
+  .machine-icon {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .machine-hero {
+    min-height: 400px;
+  }
+  
+  .machine-diagram {
+    max-width: 60%;
+    right: 10px;
+  }
+  
+  .machine-icon {
+    transform: scale(0.6);
+  }
+  
+  .heart-icon {
+    left: 20%;
+    top: 10%;
+  }
+  
+  .target-icon-1 {
+    left: 35%;
+    top: 8%;
+  }
+  
+  .target-icon-2 {
+    left: 35%;
+    top: 45%;
+  }
+  
+  .hexagon-cluster {
+    left: 5%;
+    top: 25%;
+  }
+  
+  .lightning-cluster {
+    left: 32%;
+    top: 35%;
+  }
+  
+  .liver-icon-container {
+    left: 28%;
+    top: 55%;
+  }
+  
+  .semicircular-arc {
+    left: 10%;
+    top: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .machine-hero {
+    min-height: 350px;
+  }
+  
+  .machine-diagram {
+    max-width: 70%;
+    right: 0;
+  }
+  
+  .machine-icon {
+    transform: scale(0.5);
+  }
+}
+
+
+
+

@@ -1,0 +1,374 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;500;600&display=swap');
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main Section */
+.healthy-solutions {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 68px 20px 86px;
+}
+
+.healthy-solutions-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.healthy-solutions-heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+  margin: 0 0 18px 0;
+  color: #0b0b0b;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Description Paragraph */
+.healthy-solutions-description {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  max-width: 980px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+/* Main Grid Container */
+.solutions-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 420px 1fr;
+  align-items: center;
+  gap: 36px;
+}
+
+/* Left and Right Columns */
+.solutions-left-column,
+.solutions-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Left column cards align to left */
+.solutions-left-column {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Right column cards align to right */
+.solutions-right-column {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/* Feature Card */
+.feature-card {
+  background: #fff;
+  border: 3px solid #00bcea;
+  border-radius: 18px;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.08);
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  max-width: 100%;
+  animation: fadeUp 600ms ease-out both;
+}
+
+/* Feature Icon Circle */
+.feature-icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #00bcea 0%, #00a7d6 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.feature-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Feature Title */
+.feature-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0b0b0b;
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/* Center Column - Product Circle */
+.solutions-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-circle {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: #f2f4f5;
+  background: radial-gradient(circle at center, #f2f4f5 0%, #e8eaec 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 120px rgba(0, 0, 0, 0.06);
+  animation: fadeUp 700ms ease-out both;
+}
+
+.product-circle-inner {
+  width: 100%;
+  height: 100%;
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+/* Desktop (>= 1200px) */
+@media (min-width: 1200px) {
+  .solutions-grid {
+    grid-template-columns: 1fr 420px 1fr;
+  }
+  
+  .product-circle {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+/* Medium (900px - 1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .healthy-solutions {
+    padding: 60px 20px 70px;
+  }
+
+  .healthy-solutions-heading {
+    font-size: 48px;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr 380px 1fr;
+    gap: 32px;
+  }
+
+  .product-circle {
+    width: 380px;
+    height: 380px;
+  }
+
+  .product-circle-inner {
+    padding: 32px;
+  }
+
+  .feature-card {
+    padding: 20px 24px;
+  }
+
+  .feature-title {
+    font-size: 19px;
+  }
+}
+
+/* Mobile (<= 900px) - Stack Layout */
+@media (max-width: 900px) {
+  .healthy-solutions {
+    padding: 50px 20px 60px;
+  }
+
+  .healthy-solutions-heading {
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+
+  .healthy-solutions-description {
+    font-size: 17px;
+    margin-bottom: 36px;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Center circle appears first after description */
+  .solutions-center-column {
+    order: 0;
+    margin-bottom: 20px;
+  }
+
+  .solutions-left-column {
+    order: 1;
+    align-items: center;
+  }
+
+  .solutions-right-column {
+    order: 2;
+    align-items: center;
+  }
+
+  /* Smaller center circle on mobile */
+  .product-circle {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+  }
+
+  .product-circle-inner {
+    padding: 28px;
+  }
+
+  /* Cards on mobile - two columns if space allows, otherwise single */
+  .solutions-left-column,
+  .solutions-right-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 14px;
+    border: 2px solid #00bcea;
+    padding: 18px 20px;
+    gap: 14px;
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .feature-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .feature-title {
+    font-size: 17px;
+  }
+}
+
+/* Narrow Mobile (<= 600px) - Single column cards */
+@media (max-width: 600px) {
+  .healthy-solutions {
+    padding: 40px 16px 50px;
+  }
+
+  .healthy-solutions-heading {
+    font-size: 36px;
+    margin-bottom: 14px;
+  }
+
+  .healthy-solutions-description {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .product-circle {
+    width: 280px;
+    height: 280px;
+  }
+
+  .product-circle-inner {
+    padding: 24px;
+  }
+
+  .solutions-left-column,
+  .solutions-right-column {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card {
+    width: 92%;
+    margin: 0 auto;
+    padding: 16px 18px;
+    gap: 12px;
+  }
+
+  .feature-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .feature-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .feature-title {
+    font-size: 16px;
+  }
+}
+
+/* Very Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .healthy-solutions {
+    padding: 36px 12px 44px;
+  }
+
+  .healthy-solutions-heading {
+    font-size: 32px;
+  }
+
+  .healthy-solutions-description {
+    font-size: 15px;
+  }
+
+  .product-circle {
+    width: 260px;
+    height: 260px;
+  }
+
+  .feature-card {
+    width: 100%;
+    padding: 14px 16px;
+  }
+
+  .feature-title {
+    font-size: 15px;
+  }
+}
+
+
+
+

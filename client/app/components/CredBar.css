@@ -1,0 +1,592 @@
+/* CSS Variables */
+:root {
+  --cred-bg: #f6f7f8;
+  --cred-max-width: 1250px;
+  --cred-gap-desktop: 64px;
+  --cred-padding-vertical: 40px;
+}
+
+/* Cred Bar Container */
+.cred-bar {
+  position: relative;
+  width: 100%;
+  background-color: var(--cred-bg);
+  height: auto;
+  min-height: 140px;
+  padding: var(--cred-padding-vertical) 0;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: none;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Inner Container */
+.cred-bar-inner {
+  max-width: var(--cred-max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--cred-gap-desktop);
+}
+
+/* Base Item Styling */
+.cred-bar-item {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: credFadeUp 650ms cubic-bezier(0.22, 0.9, 0.35, 1) both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.cred-bar-item:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.cred-bar-item:nth-child(2) {
+  animation-delay: 60ms;
+}
+
+.cred-bar-item:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+.cred-bar-item:nth-child(4) {
+  animation-delay: 180ms;
+}
+
+/* Fade Up Animation */
+@keyframes credFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Trustpilot Group */
+.cred-bar-trustpilot {
+  max-height: 68px;
+}
+
+.cred-bar-trustpilot-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cred-bar-trustpilot-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.cred-bar-star {
+  color: #00B67A;
+  fill: #00B67A;
+  flex-shrink: 0;
+}
+
+.cred-bar-star-main {
+  width: 18px;
+  height: 18px;
+}
+
+.cred-bar-trustpilot-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1;
+}
+
+.cred-bar-stars-row {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 4px;
+}
+
+.cred-bar-star-small {
+  width: 14px;
+  height: 14px;
+}
+
+.cred-bar-trustpilot-rating {
+  font-size: 12px;
+  color: #374151;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cred-bar-rating-bold {
+  font-weight: 700;
+}
+
+/* BBB Badge */
+.cred-bar-bbb {
+  max-height: 76px;
+}
+
+.cred-bar-bbb-wrapper {
+  display: flex;
+  align-items: stretch;
+  height: 76px;
+}
+
+.cred-bar-bbb-left {
+  background-color: #1E40AF;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-width: 70px;
+}
+
+.cred-bar-bbb-shield {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 2px;
+}
+
+.cred-bar-bbb-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 2px 0;
+}
+
+.cred-bar-bbb-accredited {
+  font-size: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.cred-bar-bbb-business {
+  font-size: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.cred-bar-bbb-divider {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cred-bar-bbb-right {
+  background-color: #1E40AF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+}
+
+.cred-bar-bbb-rating {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.cred-bar-bbb-rating-label {
+  font-size: 8px;
+  margin-top: 2px;
+  line-height: 1;
+}
+
+/* Google Reviews */
+.cred-bar-google {
+  max-height: 58px;
+}
+
+.cred-bar-google-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cred-bar-google-logo {
+  margin-bottom: 4px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cred-bar-google-svg {
+  width: 96px;
+  height: 24px;
+}
+
+.cred-bar-google-text {
+  font-size: 10px;
+  color: #2563eb;
+  font-weight: 500;
+  margin: 0 0 3px 0;
+  line-height: 1.2;
+}
+
+.cred-bar-google-stars {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cred-bar-google-star {
+  width: 12px;
+  height: 12px;
+  color: #fbbf24;
+  fill: #fbbf24;
+}
+
+/* NYT */
+.cred-bar-nyt {
+  max-height: 48px;
+}
+
+.cred-bar-nyt-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cred-bar-nyt-letter {
+  font-size: 36px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.cred-bar-nyt-text {
+  font-size: 9px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #111827;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+
+/* Responsive: @media (max-width: 1100px) */
+@media (max-width: 1100px) {
+  .cred-bar {
+    min-height: 130px;
+    padding: 35px 0;
+  }
+  
+  .cred-bar-inner {
+    gap: 48px;
+  }
+  
+  .cred-bar-trustpilot {
+    max-height: 62px;
+  }
+  
+  .cred-bar-trustpilot-text {
+    font-size: 15px;
+  }
+  
+  .cred-bar-star-main {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .cred-bar-star-small {
+    width: 13px;
+    height: 13px;
+  }
+  
+  .cred-bar-bbb {
+    max-height: 68px;
+  }
+  
+  .cred-bar-bbb-wrapper {
+    height: 68px;
+  }
+  
+  .cred-bar-bbb-left {
+    min-width: 65px;
+    padding: 7px 9px;
+  }
+  
+  .cred-bar-bbb-right {
+    min-width: 45px;
+    padding: 7px 10px;
+  }
+  
+  .cred-bar-bbb-rating {
+    font-size: 22px;
+  }
+  
+  .cred-bar-google {
+    max-height: 52px;
+  }
+  
+  .cred-bar-google-logo {
+    height: 22px;
+  }
+  
+  .cred-bar-google-svg {
+    width: 88px;
+    height: 22px;
+  }
+  
+  .cred-bar-nyt {
+    max-height: 44px;
+  }
+  
+  .cred-bar-nyt-letter {
+    font-size: 32px;
+  }
+  
+  .cred-bar-nyt-text {
+    font-size: 8px;
+  }
+}
+
+/* Responsive: @media (max-width: 780px) */
+@media (max-width: 780px) {
+  .cred-bar {
+    height: auto;
+    padding: 28px 0;
+  }
+  
+  .cred-bar-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px 32px;
+    max-width: 500px;
+  }
+  
+  .cred-bar-item {
+    width: calc(50% - 16px);
+    min-width: 150px;
+    flex: 0 0 auto;
+  }
+  
+  .cred-bar-trustpilot {
+    max-height: 56px;
+  }
+  
+  .cred-bar-trustpilot-text {
+    font-size: 14px;
+  }
+  
+  .cred-bar-star-main {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .cred-bar-star-small {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .cred-bar-trustpilot-rating {
+    font-size: 11px;
+  }
+  
+  .cred-bar-bbb {
+    max-height: 60px;
+  }
+  
+  .cred-bar-bbb-wrapper {
+    height: 60px;
+  }
+  
+  .cred-bar-bbb-left {
+    min-width: 60px;
+    padding: 6px 8px;
+  }
+  
+  .cred-bar-bbb-text {
+    font-size: 13px;
+  }
+  
+  .cred-bar-bbb-right {
+    min-width: 40px;
+    padding: 6px 9px;
+  }
+  
+  .cred-bar-bbb-rating {
+    font-size: 20px;
+  }
+  
+  .cred-bar-google {
+    max-height: 48px;
+  }
+  
+  .cred-bar-google-logo {
+    height: 20px;
+  }
+  
+  .cred-bar-google-svg {
+    width: 80px;
+    height: 20px;
+  }
+  
+  .cred-bar-google-text {
+    font-size: 9px;
+  }
+  
+  .cred-bar-google-star {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .cred-bar-nyt {
+    max-height: 40px;
+  }
+  
+  .cred-bar-nyt-letter {
+    font-size: 28px;
+  }
+  
+  .cred-bar-nyt-text {
+    font-size: 7px;
+  }
+}
+
+/* Responsive: @media (max-width: 420px) */
+@media (max-width: 420px) {
+  .cred-bar {
+    padding: 24px 0;
+  }
+  
+  .cred-bar-inner {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+  }
+  
+  .cred-bar-item {
+    width: 100%;
+    max-width: 200px;
+    max-height: 40px !important;
+  }
+  
+  .cred-bar-trustpilot {
+    max-height: 40px;
+  }
+  
+  .cred-bar-trustpilot-text {
+    font-size: 13px;
+  }
+  
+  .cred-bar-star-main {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .cred-bar-star-small {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .cred-bar-trustpilot-rating {
+    font-size: 10px;
+  }
+  
+  .cred-bar-bbb-wrapper {
+    height: 40px;
+    max-height: 40px;
+  }
+  
+  .cred-bar-bbb-left {
+    min-width: 55px;
+    padding: 4px 6px;
+  }
+  
+  .cred-bar-bbb-shield {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .cred-bar-bbb-text {
+    font-size: 11px;
+  }
+  
+  .cred-bar-bbb-accredited,
+  .cred-bar-bbb-business {
+    font-size: 5px;
+  }
+  
+  .cred-bar-bbb-right {
+    min-width: 35px;
+    padding: 4px 7px;
+  }
+  
+  .cred-bar-bbb-rating {
+    font-size: 18px;
+  }
+  
+  .cred-bar-bbb-rating-label {
+    font-size: 7px;
+  }
+  
+  .cred-bar-google {
+    max-height: 40px;
+  }
+  
+  .cred-bar-google-logo {
+    height: 18px;
+    margin-bottom: 2px;
+  }
+  
+  .cred-bar-google-svg {
+    width: 72px;
+    height: 18px;
+  }
+  
+  .cred-bar-google-text {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+  
+  .cred-bar-google-star {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .cred-bar-nyt {
+    max-height: 40px;
+  }
+  
+  .cred-bar-nyt-letter {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  
+  .cred-bar-nyt-text {
+    font-size: 6px;
+  }
+}
+

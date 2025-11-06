@@ -1,0 +1,389 @@
+/* Health Benefits Section */
+.health-benefits {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.health-benefits::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(135, 206, 250, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(135, 206, 250, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(135, 206, 250, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.health-benefits-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Product Display */
+.health-benefits-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.health-benefits-product-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.health-benefits-ionizer {
+  width: 180px;
+  height: 260px;
+  background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.health-benefits-ionizer-display {
+  width: 100px;
+  height: 80px;
+  background: linear-gradient(135deg, #00ff00 0%, #00cc00 100%);
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+
+.health-benefits-display-line {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1;
+  text-align: center;
+}
+
+.health-benefits-display-line-small {
+  font-size: 10px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1;
+  text-align: center;
+}
+
+.health-benefits-grid-label,
+.health-benefits-uv-label {
+  font-size: 9px;
+  color: #9ca3af;
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.health-benefits-logo {
+  font-size: 10px;
+  color: #ffffff;
+  margin-top: auto;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.health-benefits-faucet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.health-benefits-faucet-spouts {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.health-benefits-spout {
+  width: 20px;
+  height: 60px;
+  background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+  border-radius: 10px 10px 2px 2px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.health-benefits-spout::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 12px;
+  background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+  border-radius: 8px 8px 0 0;
+}
+
+.health-benefits-faucet-base {
+  width: 48px;
+  height: 20px;
+  background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Benefits Content */
+.health-benefits-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.health-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.health-benefit-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #00BCEA;
+}
+
+.health-benefit-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.health-benefit-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Tablet Responsive (<= 1024px) */
+@media (max-width: 1024px) {
+  .health-benefits {
+    padding: 60px 0;
+  }
+
+  .health-benefits-container {
+    padding: 0 32px;
+    gap: 60px;
+  }
+
+  .health-benefits-ionizer {
+    width: 160px;
+    height: 240px;
+    padding: 16px;
+  }
+
+  .health-benefits-ionizer-display {
+    width: 90px;
+    height: 72px;
+    padding: 6px;
+  }
+
+  .health-benefits-display-line {
+    font-size: 16px;
+  }
+
+  .health-benefits-display-line-small {
+    font-size: 9px;
+  }
+
+  .health-benefits-spout {
+    width: 18px;
+    height: 54px;
+  }
+
+  .health-benefits-content {
+    gap: 28px;
+  }
+
+  .health-benefit-item {
+    gap: 16px;
+  }
+
+  .health-benefit-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .health-benefit-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .health-benefit-text {
+    font-size: 17px;
+  }
+}
+
+/* Mobile Responsive (<= 768px) */
+@media (max-width: 768px) {
+  .health-benefits {
+    padding: 50px 0;
+  }
+
+  .health-benefits-container {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+    gap: 50px;
+  }
+
+  .health-benefits-product-wrapper {
+    gap: 24px;
+  }
+
+  .health-benefits-ionizer {
+    width: 140px;
+    height: 220px;
+    padding: 14px;
+  }
+
+  .health-benefits-ionizer-display {
+    width: 80px;
+    height: 64px;
+    padding: 6px;
+    margin-top: 8px;
+  }
+
+  .health-benefits-display-line {
+    font-size: 14px;
+  }
+
+  .health-benefits-display-line-small {
+    font-size: 8px;
+  }
+
+  .health-benefits-spout {
+    width: 16px;
+    height: 48px;
+  }
+
+  .health-benefits-spout::before {
+    width: 14px;
+    height: 10px;
+  }
+
+  .health-benefits-faucet-base {
+    width: 40px;
+    height: 16px;
+  }
+
+  .health-benefits-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .health-benefit-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .health-benefit-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .health-benefit-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .health-benefit-text {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .health-benefits {
+    padding: 40px 0;
+  }
+
+  .health-benefits-container {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .health-benefits-ionizer {
+    width: 120px;
+    height: 180px;
+    padding: 12px;
+  }
+
+  .health-benefits-ionizer-display {
+    width: 70px;
+    height: 56px;
+    padding: 5px;
+  }
+
+  .health-benefits-display-line {
+    font-size: 12px;
+  }
+
+  .health-benefits-display-line-small {
+    font-size: 7px;
+  }
+
+  .health-benefits-spout {
+    width: 14px;
+    height: 40px;
+  }
+
+  .health-benefits-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .health-benefit-item {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .health-benefit-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .health-benefit-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .health-benefit-text {
+    font-size: 14px;
+  }
+}
+
+
+
+

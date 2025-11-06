@@ -1,0 +1,252 @@
+/* Who Loves Life Section */
+.who-loves-life {
+  width: 100%;
+  background-color: #E5E5E5;
+  padding: 80px 0;
+}
+
+.who-loves-life-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.who-loves-life-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.who-loves-life-main-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Filter Buttons */
+.who-loves-life-filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.who-loves-life-filter {
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #00BCEA;
+  background-color: #ffffff;
+  color: #00BCEA;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.who-loves-life-filter:hover {
+  background-color: #f0f9ff;
+  transform: translateY(-2px);
+}
+
+.who-loves-life-filter.active {
+  background-color: #00BCEA;
+  color: #ffffff;
+}
+
+/* Video Grid */
+.who-loves-life-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Video Card */
+.who-loves-life-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.who-loves-life-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Wrapper */
+.who-loves-life-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.who-loves-life-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play Button */
+.who-loves-life-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #00BCEA;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 188, 234, 0.4);
+  transition: all 0.3s ease;
+}
+
+.who-loves-life-play-button:hover {
+  background-color: #00A8D4;
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 188, 234, 0.5);
+}
+
+.who-loves-life-play-icon {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+  margin-left: 3px;
+}
+
+/* Tablet Responsive (<= 1024px) */
+@media (max-width: 1024px) {
+  .who-loves-life {
+    padding: 60px 0;
+  }
+
+  .who-loves-life-container {
+    padding: 0 32px;
+  }
+
+  .who-loves-life-main-title {
+    font-size: 36px;
+  }
+
+  .who-loves-life-header {
+    margin-bottom: 36px;
+  }
+
+  .who-loves-life-filters {
+    margin-bottom: 40px;
+  }
+
+  .who-loves-life-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .who-loves-life-play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .who-loves-life-play-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Mobile Responsive (<= 768px) */
+@media (max-width: 768px) {
+  .who-loves-life {
+    padding: 50px 0;
+  }
+
+  .who-loves-life-container {
+    padding: 0 24px;
+  }
+
+  .who-loves-life-main-title {
+    font-size: 32px;
+  }
+
+  .who-loves-life-header {
+    margin-bottom: 32px;
+  }
+
+  .who-loves-life-filters {
+    margin-bottom: 36px;
+    gap: 12px;
+  }
+
+  .who-loves-life-filter {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+
+  .who-loves-life-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .who-loves-life-card {
+    aspect-ratio: 3/4;
+  }
+
+  .who-loves-life-play-button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .who-loves-life-play-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .who-loves-life {
+    padding: 40px 0;
+  }
+
+  .who-loves-life-container {
+    padding: 0 20px;
+  }
+
+  .who-loves-life-main-title {
+    font-size: 28px;
+  }
+
+  .who-loves-life-header {
+    margin-bottom: 28px;
+  }
+
+  .who-loves-life-filters {
+    margin-bottom: 32px;
+    gap: 8px;
+  }
+
+  .who-loves-life-filter {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .who-loves-life-play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .who-loves-life-play-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
