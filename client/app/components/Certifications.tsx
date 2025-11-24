@@ -69,8 +69,8 @@ export default function Certifications() {
         <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="10" y="10" width="40" height="40" rx="5" fill="#D32F2F" />
           <text x="30" y="35" textAnchor="middle" fill="white" fontSize="28" fontWeight="bold" fontFamily="Arial, sans-serif">G</text>
-          <text x="55" y="28" textAnchor="left" fill="black" fontSize="14" fontWeight="bold" fontFamily="Arial, sans-serif">GOOD</text>
-          <text x="55" y="42" textAnchor="left" fill="black" fontSize="14" fontWeight="bold" fontFamily="Arial, sans-serif">DESIGN</text>
+          <text x="55" y="28" textAnchor="start" fill="black" fontSize="14" fontWeight="bold" fontFamily="Arial, sans-serif">GOOD</text>
+          <text x="55" y="42" textAnchor="start" fill="black" fontSize="14" fontWeight="bold" fontFamily="Arial, sans-serif">DESIGN</text>
         </svg>
       )
     }
@@ -83,9 +83,9 @@ export default function Certifications() {
         <svg width="140" height="80" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg">
           {/* Water wave graphic */}
           <path d="M10 50 Q25 30 40 50 Q55 30 70 50 Q85 30 100 50 L100 60 L10 60 Z" fill="#1976D2" />
-          <text x="10" y="20" textAnchor="left" fill="black" fontSize="12" fontWeight="bold" fontFamily="Arial, sans-serif">MEMBER</text>
-          <text x="50" y="40" textAnchor="left" fill="#1976D2" fontSize="10" fontWeight="bold" fontFamily="Arial, sans-serif">Water Quality</text>
-          <text x="50" y="52" textAnchor="left" fill="#1976D2" fontSize="10" fontWeight="bold" fontFamily="Arial, sans-serif">ASSOCIATION</text>
+          <text x="10" y="20" textAnchor="start" fill="black" fontSize="12" fontWeight="bold" fontFamily="Arial, sans-serif">MEMBER</text>
+          <text x="50" y="40" textAnchor="start" fill="#1976D2" fontSize="10" fontWeight="bold" fontFamily="Arial, sans-serif">Water Quality</text>
+          <text x="50" y="52" textAnchor="start" fill="#1976D2" fontSize="10" fontWeight="bold" fontFamily="Arial, sans-serif">ASSOCIATION</text>
         </svg>
       )
     },
