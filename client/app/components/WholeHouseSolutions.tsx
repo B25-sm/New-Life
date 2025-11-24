@@ -11,7 +11,7 @@ export default function WholeHouseSolutions() {
           <h2 className="whole-house-solutions-title">Life Ionizer Healthy Water Solutions</h2>
           <p className="whole-house-solutions-description">
             Say goodbye to chlorine, sediment, and heavy metals. Our <strong>Whole House Solutions</strong> provide the
-            ultimate in water purification and filtration, protecting your family's health, leaving your skin and hair
+            ultimate in water purification and filtration, protecting your family&apos;s health, leaving your skin and hair
             softer, and extending the life of your appliances.
           </p>
         </div>

@@ -119,7 +119,7 @@ export default function CustomWaterSystem() {
             
             {/* Description */}
             <p className="text-gray-900 text-left">
-              Based on your water report, we'll help you select the ideal system, complete with custom filters and attachments tailored to your specific needs.
+              Based on your water report, we&apos;ll help you select the ideal system, complete with custom filters and attachments tailored to your specific needs.
             </p>
           </div>
 
@@ -178,7 +178,7 @@ export default function CustomWaterSystem() {
             
             {/* Description */}
             <p className="text-gray-900 text-left">
-              Get your system delivered in just 2 days. It's quick to set up, and we're always available to assist you with any questions along the way.
+              Get your system delivered in just 2 days. It&apos;s quick to set up, and we&apos;re always available to assist you with any questions along the way.
             </p>
           </div>
         </div>

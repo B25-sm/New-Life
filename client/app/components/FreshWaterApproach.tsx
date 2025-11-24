@@ -29,12 +29,12 @@ export default function FreshWaterApproach() {
                 Approach to Health
               </h2>
               <p className="text-lg md:text-xl text-white leading-relaxed drop-shadow-md max-w-xl">
-                Are you aware of what's in your water? Hidden contaminants could be lurking in every
+                Are you aware of what&apos;s in your water? Hidden contaminants could be lurking in every
                 glass or bottle. At Life Ionizers, our water experts meticulously analyze your unique
                 water supply to uncover potential risks that may be affecting both your health and
                 the water that touches your skin. With our state-of-the-art solutions, you can
                 finally access the clean, safe water you deserve. Your water solutions are here—and
-                so is the help you've been looking for.
+                so is the help you&apos;ve been looking for.
               </p>
             </div>
 

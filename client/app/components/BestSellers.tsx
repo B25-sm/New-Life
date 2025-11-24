@@ -78,7 +78,7 @@ export default function BestSellers() {
               
               {/* Testimonial */}
               <p className="text-gray-700 mb-2 text-sm italic">
-                "The MXL -9 Countertop Water Ionizer has completely changed the taste of my water. I feel healthier and more energized every day!"
+                &quot;The MXL -9 Countertop Water Ionizer has completely changed the taste of my water. I feel healthier and more energized every day!&quot;
               </p>
               
               {/* Reviewer */}
@@ -128,7 +128,7 @@ export default function BestSellers() {
               
               {/* Testimonial */}
               <p className="text-gray-700 mb-2 text-sm italic">
-                "Since I got the Dolphin Whole Home Filtration Set, my entire house has access to clean, filtered water. I highly recommend it!"
+                &quot;Since I got the Dolphin Whole Home Filtration Set, my entire house has access to clean, filtered water. I highly recommend it!&quot;
               </p>
               
               {/* Reviewer */}
@@ -210,7 +210,7 @@ export default function BestSellers() {
               
               {/* Testimonial */}
               <p className="text-gray-700 mb-2 text-sm italic">
-                "The MXL -15 Under-Counter Water Ionizer is sleek, efficient, and easy to install. My water has never tasted better!"
+                &quot;The MXL -15 Under-Counter Water Ionizer is sleek, efficient, and easy to install. My water has never tasted better!&quot;
               </p>
               
               {/* Reviewer */}

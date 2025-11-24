@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Play } from 'lucide-react'
+import Image from 'next/image'
 import './WhoLovesLife.css'
 
 interface Video {
@@ -164,7 +165,14 @@ export default function WhoLovesLife() {
           {currentVideos.map((video) => (
             <div key={video.id} className="who-loves-life-card">
               <div className="who-loves-life-image-wrapper">
-                <img src={video.image} alt={video.name} className="who-loves-life-image" />
+                <Image 
+                  src={video.image} 
+                  alt={video.name} 
+                  width={300}
+                  height={400}
+                  className="who-loves-life-image"
+                  unoptimized
+                />
                 <button className="who-loves-life-play-button">
                   <Play className="who-loves-life-play-icon" />
                 </button>

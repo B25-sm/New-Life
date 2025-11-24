@@ -82,7 +82,7 @@ export default function LoginPage() {
             {loading ? 'Logging in...' : 'Login'}
           </button>
           <p className="mt-4 text-center text-support">
-            Don't have an account?{' '}
+            Don&apos;t have an account?{' '}
             <Link href="/auth/register" className="text-accent hover:underline">
               Register
             </Link>

@@ -22,7 +22,7 @@ export default function TopHeroSection() {
       <div className="top-hero-content">
         {/* Headline */}
         <h1 className="top-hero-headline">
-          America's Top Rated Water Filtration Company!
+          America&apos;s Top Rated Water Filtration Company!
         </h1>
 
         {/* Feature Boxes */}

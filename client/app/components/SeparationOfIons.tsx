@@ -70,7 +70,7 @@ export default function SeparationOfIons() {
             </h2>
 
             <p className="separation-paragraph">
-              Hydrogen-rich water is the future of hydration and vitality. Backed by growing scientific studies on molecular hydrogen's powerful antioxidant benefits, Life Ionizers provides superior water for health, energy, and cognitive focus. Plus, you get naturally-generated acidic water for household sterilization and beauty—all built on 29 years of trusted innovation.
+              Hydrogen-rich water is the future of hydration and vitality. Backed by growing scientific studies on molecular hydrogen&apos;s powerful antioxidant benefits, Life Ionizers provides superior water for health, energy, and cognitive focus. Plus, you get naturally-generated acidic water for household sterilization and beauty—all built on 29 years of trusted innovation.
             </p>
 
             <div className="separation-statistics" role="group" aria-label="Research and benefits statistics">
